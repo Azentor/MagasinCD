@@ -1,0 +1,2 @@
+# MagasinCD
+A School project
