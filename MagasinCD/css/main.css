@@ -1,0 +1,336 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Arvo', serif;
+font-family: 'Titillium Web', sans-serif;*/
+@media only screen 
+and (min-device-width : 1064px) 
+ { /* STYLES GO HERE */}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    z-index:0;
+    background-color: darkgrey;
+    color: gold;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#accueil{
+    
+    padding-top: 4%;
+    width : 100%;
+    height: 100vh;
+    background-image:  url('../images/factory-1518504_1920.jpg');
+}
+#artaccueil{
+    margin: 3em;
+    background-color: rgba(105,105,105, 0.75);
+    font-size: 1em;
+    line-height: 1.75em;
+    padding: 0.4em;
+    width: 66%;
+}
+em{
+    font-weight: 200;
+}
+.artaccueil h1{
+    font-family: 'Playfair Display', serif;
+}
+.menuBars{
+        display: none;  
+      }
+.navigation{
+    background-color: black;
+    padding: 0;
+    position:sticky;
+    top: 0;
+}
+nav li{
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0.3em;
+    padding-right: 0.5em;
+    text-decoration: none;
+    display: inline;
+}
+nav li a{
+    color:gold;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+nav li a:hover{
+    color: white;
+    background-color: darkgray;
+}
+h2, h3{
+    margin-left: 1em;
+}
+button{
+    color:gold;
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+button a{
+    color:gold;
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+button a:visited{
+    color:gold;
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+#produits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+#produits article:hover{
+    box-shadow: 5px 5px 15px 0px #000000;
+}
+
+#prods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 320px;
+    min-height: 480px;
+    position: relative;
+    background-color: dimgrey;
+    border-radius: 3%;
+    top: 0;
+}
+#prods img{
+    width: 320px;
+    height: 214px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+table{
+    background-color: darkslategrey;
+    margin: 40px;
+}
+/*table :first-child{
+    background-color: black;
+}*/
+table tr:first-child td{
+    background-color: black;
+}
+.cartef{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.cartef p{
+    color:gold;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.25em;
+    padding: 0.25em;
+    line-height: 1.5em;
+    
+}
+.cartef a{
+    
+    color:gold;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.25em;
+    padding: 0.25em;
+    line-height: 1.5em;
+}
+
+.cartef a:hover{
+    color:white;
+    background-color: black;
+}
+.cartef button{
+    background-color: red;
+    color: ghostwhite;
+    border: 0px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.25em;
+    margin-top: 0.25em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    border-radius: 10%;
+    font-family: 'Titillium Web', sans-serif;
+}
+.cartef button:hover{
+    box-shadow: 5px 5px 15px 0px #000000;
+}
+#prod{
+    display: none;
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5%;
+    width: 600px;
+    min-height: 600px;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    background-color: dimgrey;
+    border-radius: 3%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;      
+    z-index: 100;
+    animation: growFadeIn 1s;
+}
+#prod img{
+    border-top-left-radius: 3%;
+    align-self: flex-start;
+    position: static;
+    top: 10%;
+    left: 10%;   
+}
+#prod .infos {
+    margin-left: 4%;
+    
+}
+#prod .cartef{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+/* CSS Yana*/
+tbody{
+	
+	width: 60%;
+	
+}
+
+td{
+	
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+th, td {
+    padding: 10px;
+    padding-bottom: 2px;
+}
+
+/* END CSS Yana*/
+footer {
+    background-color: black;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: flex-end;
+    
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer li{
+    list-style-type: none;
+    color: gold;
+    
+}
+footer a{
+    color:gold;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.1em;
+    padding: 0.1em;
+    line-height: 1.5em;
+}
+footer a:hover{
+    color:bisque;
+    background-color: black;
+}
+@-webkit-keyframes growFadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.menuBars{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      
+.navigation{
+    display: none;
+    background-color: dimgray;
+    padding: 0;
+    width: 66%;;
+}
+nav li{
+    top:0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    padding-right: 0.5em;
+    text-decoration: none;
+    
+}
+nav a{
+    color:gold;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-left: 0.1em;
+    padding-right: 0.3em;
+}
+
+nav a:hover{
+    color:bisque;
+    background-color: black;
+}
+
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape){
+.menuBars{
+        display: none;  
+      }
+}
